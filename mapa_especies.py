@@ -20,3 +20,8 @@ m = folium.Map(location=[50, 10], zoom_start=2, tiles='Mapbox Bright')
 
 feature_group = folium.FeatureGroup(name='Asterina_gibbosa')
 feature_group1 = folium.FeatureGroup(name='Octopus_vulgaris')
+
+for lon, lat, dates in zip(lon, lat, dates):
+    feature_group.add_child(folium.Marker(location=[lat, lon], popup=dates, icon=folium.Icon(color='pink', icon= 'asterisk')))
+for lon1, lat1, dates1 in zip(lon1, lat1, dates1):
+    feature_group1.add_child(folium.Marker(location=[lat1, lon1], popup=dates1, icon=folium.Icon(color='green', icon='asterisk')))
