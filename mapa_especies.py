@@ -12,3 +12,6 @@ specie1= pd.read_csv('octopus_vulgaris.csv')
 
 lon, lat = specie['decimalLongitude'], specie['decimalLatitude']
 lon1, lat1 = specie1['decimalLongitude'], specie1['decimalLatitude']
+
+dates = specie['eventDate'].astype('str')
+dates1 = specie1['eventDate'].astype('str')
