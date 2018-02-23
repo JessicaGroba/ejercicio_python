@@ -16,7 +16,7 @@ lon1, lat1 = specie1['decimalLongitude'], specie1['decimalLatitude']
 dates = specie['eventDate'].astype('str')
 dates1 = specie1['eventDate'].astype('str')
 
-m = folium.Map(location=[50, 10], zoom_start=2, tiles='Mapbox Bright')
+m = folium.Map(location=[50, 10], zoom_start=2, tiles='Mapbox Bright', control_scale=True)
 
 feature_group = folium.FeatureGroup(name='Asterina_gibbosa')
 feature_group1 = folium.FeatureGroup(name='Octopus_vulgaris')
