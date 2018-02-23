@@ -28,3 +28,6 @@ for lon1, lat1, dates1 in zip(lon1, lat1, dates1):
     
 m.add_child(feature_group)
 m.add_child(feature_group1)
+
+
+folium.LayerControl().add_to(m)
