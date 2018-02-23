@@ -31,3 +31,5 @@ m.add_child(feature_group1)
 
 
 folium.LayerControl().add_to(m)
+
+m.save('mapa_oc_ast.html')
